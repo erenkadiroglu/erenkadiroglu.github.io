@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eren KADİROĞLU - Kişisel Portföy</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Mobil Header (768px ve altı) -->
+    <div class="mobile-header">
+      <div class="profile-container">
+        <img src="profile.png" alt="Profil" class="profile-img" />
+        <div class="profile-quote">" Kodla, öğren, geliştir. "</div>
+      </div>
+      <div class="mobile-buttons">
+        <button id="hamburger" aria-label="Menüyü Aç/Kapat">☰</button>
+      </div>
+    </div>
+
+    <!-- Masaüstü Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-container">
+        <img src="profile.png" alt="Profil" class="profile-img" />
+        <div class="profile-quote">" Kodla, öğren, geliştir. "</div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#about">Hakkımda</a>
+        <a href="#education">Eğitim</a>
+        <a href="#skills">Beceriler & Araçlar</a>
+        <a href="#projects">Projeler</a>
+        <a href="#certificates">Sertifikalar</a>
+        <a href="#references">Referanslar</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section class="hero">
+        <h1>
+          👋 Merhaba, ben <strong>Eren KADİROĞLU!</strong>
+        </h1>
+        <p>
+          Yazılım geliştirme yolculuğumu, teknik yetkinliklerimi ve üzerinde
+          çalıştığım projeleri bu sayfada paylaşıyorum. Kariyerimle ilgili
+          fırsatlar ve iş birlikleri için iletişim bilgilerim sayfanın sonunda
+          yer alıyor.
+        </p>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Hakkımda</h2>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <p>Kahramanmaraş Sütçü İmam Üniversitesi Bilgisayar Mühendisliği bölümünde 2. sınıf öğrencisiyim.<br /><br />
+            Yazılım geliştirme alanında kendimi sürekli geliştirmeye odaklanmış, özellikle oyun ve mobil uygulama geliştirme konularına ilgi duyan bir yazılımcıyım. Java, Python, C ve C++ gibi programlama dillerinde yetkinlik kazanıyor, yeni teknolojileri takip ederek bilgi birikimimi güncel tutuyorum.<br /><br />
+            Takım çalışmasına yatkın, analitik düşünceye sahip ve problem çözme becerileri gelişmiş bir geliştiriciyim. Kariyer hedefim, yazılım sektöründe yenilikçi projelerde yer almak ve alanımda uzmanlaşmaktır. <br /><br />
+            İş birliği, staj veya proje teklifleri için benimle iletişime geçebilirsiniz.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Eğitim</h2>
+        <div class="education-grid">
+          <div class="education-item">
+            <h3>Lise (2017 – 2021)</h3>
+            <p>Salih Zeki Anadolu Lisesi, Eskişehir / Odunpazarı</p>
+          </div>
+          <div class="education-item">
+            <h3>Lisans (2023 – Devam Ediyor)</h3>
+            <p>
+              Kahramanmaraş Sütçü İmam Üniversitesi, Kahramanmaraş / Onikişubat<br />
+              Bilgisayar Mühendisliği Bölümü, 2. Sınıf Öğrencisi
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="skills" class="section">
+        <h2>Beceriler & Araçlar</h2>
+        <div class="skills-grid">
+          <div class="skill">Java</div>
+          <div class="skill">Oyun Geliştirme</div>
+          <div class="skill">Mobil Uygulama Geliştirme</div>
+          <div class="skill">Python</div>
+          <div class="skill">C / C++</div>
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">Görüntü İşleme / Roboflow</div>
+          <div class="skill">NetBeans</div>
+          <div class="skill">Visual Studio Code</div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projeler</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="projects/project4/P4-GoruntuIslemeProjesi-Thumbnail.png"
+              alt="2D Büyücü Savaşı"
+              class="project-image"
+            />
+            <h3>Görüntü İşleme</h3>
+            <p>Python & Roboflow ile görüntü işleme.</p>
+            <div class="project-buttons">
+              <a href="P4-GoruntuIslemeProjesi.html" class="btn">Detaylar</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="projects/project3/P3-2DBuyucuSavasıProjesi-Thumbnail.png"
+              alt="2D Büyücü Savaşı"
+              class="project-image"
+            />
+            <h3>2D Büyücü Savaşı Oyunu</h3>
+            <p>Java ile geliştirdiğim PvP 2D arena oyunu.</p>
+            <div class="project-buttons">
+              <a href="P3-2DBuyucuSavasıProjesi.html" class="btn">Detaylar</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="projects/project2/P2-MayınTarlasıOyunuProjesi-Thumbnail.png"
+              alt="2D Büyücü Savaşı"
+              class="project-image"
+            />
+            <h3>Mayın Tarlası Oyunu</h3>
+            <p>C programlama dili ile mayın tarlası oyunu.</p>
+            <div class="project-buttons">
+              <a href="P2-MayınTarlasıOyunuProjesi.html" class="btn">Detaylar</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="projects/project1/P1-BasitSeviyedeKişiselWebSitesiProjesi-Thumbnail.png"
+              alt="2D Büyücü Savaşı"
+              class="project-image"
+            />
+            <h3>Basit Seviyede Kişisel Web Sitesi</h3>
+            <p>HTML & CSS ile sosyal ikon yönlendirmeli kişisel web sitesi.</p>
+            <div class="project-buttons">
+              <a href="P1-BasitSeviyedeKişiselWebSitesiProjesi.html" class="btn">Detaylar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section">
+          <h2>Sertifikalar</h2>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <h4>Python for Everybody - Coursera</h4>
+              <p>Dr. Charles Severance tarafından verilen giriş seviyesi Python kursu.</p>
+            </div>
+            <div class="cert-item">
+              <h4>Frontend Web Development - Udemy</h4>
+              <p>HTML, CSS, JavaScript temelleri ve modern UI geliştirme.</p>
+            </div>
+            <!-- Yeni sertifikalar buraya eklenebilir -->
+          </div>
+      </section>
+
+      <section id="references" class="section">
+        <h2>Referanslar</h2>
+        <div class="ref-grid">
+          <div class="ref-card">
+            <h4>Doç. Dr. Abdullah ÇALIŞKAN</h4>
+            <p>
+              <strong>Kahramanmaraş Sütçü İmam Üniversitesi</strong><br />
+              Mühendislik-Mimarlık Fakültesi, Bilgisayar Mühendisliği Bölümü
+            </p>
+            <p><strong>Uzmanlık Alanı: </strong>Yapay Zeka, Makine Öğrenmesi, Görüntü İşleme</p>
+            <p><a href="mailto:abdullahcaliskan@ksu.edu.tr">abdullahcaliskan@ksu.edu.tr</a></p>
+          </div>
+
+          <div class="ref-card">
+            <h4>Öğr. Gör. Bilgehan GÜRÜNLÜ</h4>
+            <p>
+              <strong>Kahramanmaraş Sütçü İmam Üniversitesi</strong><br />
+              Rektörlük, Enformatik Bölümü
+            </p>
+            <p><strong>Uzmanlık Alanı: </strong>Bilgisayar Bilimleri ve Mühendisliği</p>
+            <p><a href="mailto:gurunlu@ksu.edu.tr">gurunlu@ksu.edu.tr</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>İletişim</h2>
+        <div class="social-icons">
+          <a href="mailto:erenkdroglu@gmail.com" target="_blank" title="Gmail">
+            <img src="./icons/mail.svg" alt="Gmail" />
+          </a>
+          <a href="https://www.linkedin.com/in/erenkadiroglu/" target="_blank" title="LinkedIn">
+            <img src="./icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Eren-Kadiroglu" target="_blank" title="GitHub">
+            <img src="./icons/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.instagram.com/eren_kdroglu/" target="_blank" title="Instagram">
+            <img src="./icons/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <p>Teşekkürler! Ziyaret ettiğiniz için memnun oldum. 🙌</p>
+        <br />
+        <p>© 2025 Eren KADİROĞLU. Tüm hakları saklıdır.</p>
+      </footer>
+    </main>
+
+    <style>
+      /* Fare izinin görünümü */
+      .trail {
+        position: fixed;
+        pointer-events: none;
+        width: 40px;
+        height: 30px;
+        background: rgba(56, 189, 248, 0.2);
+        border-radius: 50%;
+        filter: blur(10px);
+        opacity: 0.4;
+        transform: translate(-50%, -50%);
+        transition: opacity 1.5s ease-out;
+        z-index: 9999;
+      }
+      </style>
+
+    <script>
+      // Fare hareketinde iz bırakma efekti
+      document.addEventListener('mousemove', (e) => {
+        const trail = document.createElement('div');
+        trail.className = 'trail';
+        trail.style.left = e.clientX + 'px';
+        trail.style.top = e.clientY + 'px';
+        document.body.appendChild(trail);
+
+        setTimeout(() => {
+          trail.style.opacity = '0';
+        }, 50); // Hemen saydamlaşmaya başlar
+
+        setTimeout(() => {
+          trail.remove();
+        }, 1250); // 1 saniye içinde tamamen kaybolup silinir
+      });
+    </script>
+    <script src="script.js"></script>
+    <label class="switch">
+      <input type="checkbox" id="themeToggleBtn" onclick="toggleTheme()">
+      <span class="slider"></span>
+    </label>
+  </body>
+</html>
