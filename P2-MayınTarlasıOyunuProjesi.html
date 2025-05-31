@@ -1,149 +1,29 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2D Büyücü Savaşı - Detaylar</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="mobile-topbar">
-      <div class="menu-profile-group">
-        <button class="hamburger-btn" aria-label="Menüyü Aç/Kapat">☰</button>
-        <img class="profile-img" src="profile.png" alt="Profil Fotoğrafı">
-        <span class="mobile-name">Eren KADİROĞLU - Kişisel Portföy</span>
-      </div>
-      <label class="switch">
-        <input type="checkbox" id="themeToggleBtnMobile" onclick="toggleTheme()">
-        <span class="slider"></span>
-      </label>
-    </div>
-    <nav class="mobile-menu" id="mobileMenu">
-      <a href="index.html#about">Hakkımda</a>
-      <a href="index.html#education">Eğitim</a>
-      <a href="index.html#skills">Beceriler & Araçlar</a>
-      <a href="index.html#projects">Projeler</a>
-      <a href="index.html#certificates">Sertifikalar</a>
-      <a href="index.html#references">Referanslar</a>
-      <a href="index.html#contact">İletişim</a>
-    </nav>
-    <aside class="sidebar">
-      <div class="profile-container">
-        <img src="profile.png" alt="Profil" class="profile-img" />
-        <div class="profile-quote">" Kodla, öğren, geliştir. "</div>
-      </div>
-      <nav class="sidebar-nav">
-        <a href="index.html#about">Hakkımda</a>
-        <a href="index.html#education">Eğitim</a>
-        <a href="index.html#skills">Beceriler</a>
-        <a href="index.html#projects">Projeler</a>
-        <a href="index.html#certificates">Sertifikalar</a>
-        <a href="index.html#references">Referanslar</a>
-        <a href="index.html#contact">İletişim</a>
-      </nav>
-    </aside>
-    <main class="content">
-      <section class="section">
-        <h2>Mayın Tarlası Oyunu</h2>
-        <div class="carousel">
-          <button class="carousel-btn prev" onclick="prevSlide()">
-            <img src="./icons/left.svg" alt="Önceki">
-          </button>
-          <button class="carousel-btn next" onclick="nextSlide()">
-            <img src="./icons/right.svg" alt="Sonraki">
-          </button>
-          <img src="projects/project2/photo1.png" alt="Ekran Görüntüsü" class="carousel-img active">
-          <img src="projects/project2/photo2.png" alt="Ekran Görüntüsü" class="carousel-img">
-          <img src="projects/project2/photo3.png" alt="Ekran Görüntüsü" class="carousel-img">
-          <img src="projects/project2/photo4.png" alt="Ekran Görüntüsü" class="carousel-img">
-          <img src="projects/project2/photo5.png" alt="Ekran Görüntüsü" class="carousel-img">
-        </div>
-        <div class="project-info">
-          <div class="ref-card">
-            <h4>Açıklama</h4>
-            <p>Klasik mayın tarlasına farklı bir yaklaşım getiren bu oyunda amaç sadece mayınlardan kaçmak değil; aynı zamanda başlangıçtan bitişe doğru stratejik bir yol izlemek. Etki alanlarına dikkat ederek ilerlemeyi gerektiren bu konsol tabanlı oyun, refleks ve planlamayı bir araya getiriyor. Basit arayüzüne rağmen düşündüren yapısıyla dikkat çeken bir deneyim sunuyor.</p>
-            <p>NOT: Oyuna girince kurallar ve bilgilendirmeler mevcut.</p>
-          </div>
-          <div class="project-info-row">
-            <div class="ref-card">
-              <h4>Özellikler</h4>
-              <ul>
-                <li>Klavye kontrollü labirent tarzı oyun</li>
-                <li>Rastgele yerleştirilen mayın sistemi</li>
-                <li>Temasa bağlı başlangıca dönüş mekanizması</li>
-                <li>Mayına temasla oyunun sonlanması</li>
-                <li>Konsol tabanlı minimal arayüz</li>
-                <li>Farklı zorluk seviyeleri için genişletilebilir yapı</li>
-                <li>Oyunu kapatmadan yeni oyuna başlayabilme</li>
-                <li>Oyun boyunca kaç kez mayının etki alanına basıldığının takip sistemi</li>
-                <li>Oyun boyunca kullanıcının gittiği yolu hafızada tutma sistemi</li>
-                <li>Oyun bitince yeniden aynı kullanıcı adlarıyla hızlı başlatabilme</li>
-              </ul>
-            </div>
-            <div class="ref-card">
-              <h4>Teknolojiler</h4>
-              <li>C Programlama Dili</li>
-              <li>DevC++</li>
-              <li>Konsol Arayüzü</li>
-              <li>Oyun Döngüsü</li>
-            </div>
-          </div>
-        </div>
-        <div class="project-buttons">
-          <a href="index.html#projects" class="btn">← Geri Dön</a>
-        </div>
-      </section>
-    </main>
-    <style>
-      .trail {
-        position: fixed;
-        pointer-events: none;
-        width: 40px;
-        height: 30px;
-        background: rgba(56, 189, 248, 0.2);
-        border-radius: 50%;
-        filter: blur(10px);
-        opacity: 0.4;
-        transform: translate(-50%, -50%);
-        transition: opacity 1.5s ease-out;
-        z-index: 9999;
-      }
-    </style>
-    <script src="carousel.js"></script>
-    <script src="script.js"></script>
-      <label class="switch">
-        <input type="checkbox" id="themeToggleBtn" onclick="toggleTheme()">
-        <span class="slider"></span>
-      </label>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2D Büyücü Savaşı - Detaylar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="content">
+
+  <section class="section">
+    <h2>2D Büyücü Savaşı Oyunu</h2>
+    <img src="Resimler/proje1.png" alt="Ekran Görüntüsü" style="width:100%; border-radius: 8px; margin-bottom: 20px;">
+    <p><strong>Kısa Açıklama:</strong> Java ile geliştirilmiş, iki oyunculu PvP arenalı 2D savaş oyunu.</p>
+    <p><strong>Teknolojiler:</strong> Java, NetBeans, Swing, OOP</p>
+    <p><strong>Özellikler:</strong></p>
+    <ul>
+      <li>Yönlü büyü saldırısı</li>
+      <li>Çarpışma tespiti</li>
+      <li>Can sistemi ve skor</li>
+      <li>Yeniden başlatma</li>
+    </ul>
+    <p><strong>Bağlantılar:</strong></p>
+    <a href="https://github.com/kullanici/2d-buyucu-oyunu" class="btn" target="_blank">Projeyi GitHubta Görüntüle</a>
+    <a href="index.html#projects" class="btn">← Geri Dön</a>
+  </section>
+
+</body>
 </html>
-<style>
-      .trail {
-        position: fixed;
-        pointer-events: none;
-        width: 40px;
-        height: 30px;
-        background: rgba(56, 189, 248, 0.2);
-        border-radius: 50%;
-        filter: blur(10px);
-        opacity: 0.4;
-        transform: translate(-50%, -50%);
-        transition: opacity 1.5s ease-out;
-        z-index: 9999;
-      }
-      </style>
-    <script>
-      document.addEventListener('mousemove', (e) => {
-        const trail = document.createElement('div');
-        trail.className = 'trail';
-        trail.style.left = e.clientX + 'px';
-        trail.style.top = e.clientY + 'px';
-        document.body.appendChild(trail);
-        setTimeout(() => {
-          trail.style.opacity = '0';
-        }, 50);
-        setTimeout(() => {
-          trail.remove();
-        }, 1250);
-      });
-    </script>

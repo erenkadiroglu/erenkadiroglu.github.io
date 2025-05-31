@@ -6,27 +6,9 @@
     <title>2D Büyücü Savaşı - Detaylar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="mobile-topbar">
-      <div class="menu-profile-group">
-        <button class="hamburger-btn" aria-label="Menüyü Aç/Kapat">☰</button>
-        <img class="profile-img" src="profile.png" alt="Profil Fotoğrafı">
-        <span class="mobile-name">Eren KADİROĞLU - Kişisel Portföy</span>
-      </div>
-      <label class="switch">
-        <input type="checkbox" id="themeToggleBtnMobile" onclick="toggleTheme()">
-        <span class="slider"></span>
-      </label>
-    </div>
-    <nav class="mobile-menu" id="mobileMenu">
-      <a href="index.html#about">Hakkımda</a>
-      <a href="index.html#education">Eğitim</a>
-      <a href="index.html#skills">Beceriler & Araçlar</a>
-      <a href="index.html#projects">Projeler</a>
-      <a href="index.html#certificates">Sertifikalar</a>
-      <a href="index.html#references">Referanslar</a>
-      <a href="index.html#contact">İletişim</a>
-    </nav>
+    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="profile-container">
         <img src="profile.png" alt="Profil" class="profile-img" />
@@ -42,9 +24,12 @@
         <a href="index.html#contact">İletişim</a>
       </nav>
     </aside>
+
+    <!-- Content -->
     <main class="content">
       <section class="section">
         <h2>2D Büyücü Savaşı Oyunu</h2>
+
         <div class="carousel">
           <button class="carousel-btn prev" onclick="prevSlide()">
             <img src="./icons/left.svg" alt="Önceki">
@@ -52,6 +37,8 @@
           <button class="carousel-btn next" onclick="nextSlide()">
             <img src="./icons/right.svg" alt="Sonraki">
           </button>
+
+          <!-- Carousel resimleri -->
           <img src="projects/project3/photo1.png" alt="Ekran Görüntüsü" class="carousel-img active">
           <img src="projects/project3/photo2.png" alt="Ekran Görüntüsü" class="carousel-img">
           <img src="projects/project3/photo3.png" alt="Ekran Görüntüsü" class="carousel-img">
@@ -60,12 +47,16 @@
           <img src="projects/project3/photo6.png" alt="Ekran Görüntüsü" class="carousel-img">
           <img src="projects/project3/photo7.png" alt="Ekran Görüntüsü" class="carousel-img">
         </div>
+
         <div class="project-info">
+          <!-- Üstte açıklama kartı -->
           <div class="ref-card">
             <h4>Açıklama</h4>
             <p>2D Büyücü Savaşı Oyunu, iki oyuncunun aynı bilgisayar üzerinden rekabet edebildiği eğlenceli ve dinamik bir savaş oyunudur. Oyuncular, kontrol ettikleri büyücü karakterlerle arenada birbirine karşı büyü saldırıları yaparak rakibinin canını sıfırlamaya çalışır.</p>
             <p>Harita üzerindeki engeller, oyunculara hem savunma hem de strateji geliştirme imkanı sunarken, gerçek zamanlı çarpışma tespiti ve skor takibi ile oyun heyecanı sürekli canlı tutulur. Basit kontrolleri ve keyifli grafikleriyle her seviyeden oyuncuya hitap eden oyun, özellikle arkadaşlar arasında eğlenceli ve rekabetçi mücadelelere zemin hazırlar.</p>
           </div>
+
+          <!-- Altta yan yana özellikler ve teknolojiler -->
           <div class="project-info-row">
             <div class="ref-card">
               <h4>Özellikler</h4>
@@ -80,24 +71,24 @@
                 <li>Oyun bitince yeniden aynı kullanıcı adlarıyla hızlı başlatabilme</li>
               </ul>
             </div>
+
             <div class="ref-card">
               <h4>Teknolojiler</h4>
               <li>Java</li>
-              <li>2D Collision</li>
-              <li>Event Handling</li>
-              <li>KeyListener</li>
-              <li>Graphics2D</li>
               <li>NetBeans</li>
               <li>Swing</li>
               <li>OOP</li>
             </div>
           </div>
         </div>
+
         <div class="project-buttons">
           <a href="index.html#projects" class="btn">← Geri Dön</a>
         </div>
       </section>
     </main>
+
+    <!-- Fare izi efekti -->
     <style>
       .trail {
         position: fixed;
@@ -113,6 +104,7 @@
         z-index: 9999;
       }
     </style>
+
     <script src="carousel.js"></script>
     <script src="script.js"></script>
       <label class="switch">
@@ -121,7 +113,9 @@
       </label>
   </body>
 </html>
+
 <style>
+      /* Fare izinin görünümü */
       .trail {
         position: fixed;
         pointer-events: none;
@@ -136,18 +130,22 @@
         z-index: 9999;
       }
       </style>
+
     <script>
+      // Fare hareketinde iz bırakma efekti
       document.addEventListener('mousemove', (e) => {
         const trail = document.createElement('div');
         trail.className = 'trail';
         trail.style.left = e.clientX + 'px';
         trail.style.top = e.clientY + 'px';
         document.body.appendChild(trail);
+
         setTimeout(() => {
           trail.style.opacity = '0';
-        }, 50);
+        }, 50); // Hemen saydamlaşmaya başlar
+
         setTimeout(() => {
           trail.remove();
-        }, 1250);
+        }, 1250); // 1 saniye içinde tamamen kaybolup silinir
       });
     </script>
