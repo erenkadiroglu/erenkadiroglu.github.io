@@ -1153,7 +1153,7 @@ input:checked + .slider:before {
   }
 
   .menu-profile-group .mobile-name {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 600;
     color: #e0e7ff;
     margin: 0;
