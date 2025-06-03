@@ -101,6 +101,8 @@ body.light-mode .social-icons img {
   align-items: flex-start;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
   z-index: 100;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
 .profile-container {
@@ -147,22 +149,22 @@ body.light-mode .social-icons img {
 }
 
 @media (max-width: 768px) {
-  .profile-quote {
-    position: static;
-    transform: none;
-    margin-top: 12px;
-    width: auto;
-  }
-
   .profile-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
   }
-
   .profile-img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    top: 0;
+  }
+  .profile-quote {
+    top: 130px;
+    font-size: 0.9rem;
+    padding: 4px 6px;
+    margin-top: 6px;
   }
 }
 
@@ -171,7 +173,9 @@ body.light-mode .social-icons img {
   flex-direction: column;
   width: 100%;
   gap: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+  overflow-y: auto;
+  max-height: calc(100vh - 140px);
 }
 
 .sidebar-nav a {
@@ -497,7 +501,7 @@ footer {
     margin-left: 0;
     padding: 20px 15px;
     max-height: none;
-    margin-top: 0 !important;
+    margin-top: 10px !important;
     padding-top: 0 !important;
   }
 
@@ -1099,6 +1103,28 @@ input:checked + .slider:before {
     display: flex;
   }
 
+  @media (orientation: landscape) {
+    .mobile-menu {
+      flex-direction: column;
+      padding: 8px;
+      max-height: none;
+      overflow-y: visible;
+    }
+    
+    .mobile-menu a {
+      padding: 0.4rem 2rem;
+      border-bottom: 1px solid #334155;
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    .mobile-menu a:hover,
+    .mobile-menu a:focus {
+      background: #2563eb;
+      color: #fff;
+    }
+  }
+
   body {
     padding-top: 64px;
   }
@@ -1171,4 +1197,14 @@ body.light-mode .mobile-menu a:hover,
 body.light-mode .mobile-menu a:focus {
   background: #93c5fd;
   color: #2563eb !important;
+}
+
+.mobile-topbar .profile-img {
+  height: 60%;
+  max-height: 38px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 0;
+  margin-bottom: 0;
 }
